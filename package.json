@@ -1,0 +1,34 @@
+{
+  "name": "language-conversion-tests",
+  "version": "1.0.0",
+  "description": "Playwright UI automation tests for Singlish/Thanglish to Sinhala/Tamil language conversion system",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:positive": "playwright test tests/positive",
+    "test:negative": "playwright test tests/negative",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install chromium",
+    "generate:excel": "ts-node scripts/generateExcel.ts",
+    "update:results": "ts-node scripts/updateExcelResults.ts"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "language-conversion"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
