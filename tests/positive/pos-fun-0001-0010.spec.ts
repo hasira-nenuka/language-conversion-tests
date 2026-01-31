@@ -25,9 +25,9 @@ test.describe("Positive Functional Tests - Batch 1 (TC 0001-0010)", () => {
     expect(actualOutput).toBe(testCase.expectedOutput);
   });
 
-  test("Neg_Fun_0002: Simple greeting", async () => {
+  test("Pos_Fun_0002: Simple greeting", async () => {
     const testCase = positiveTestCases.find(
-      (tc) => tc.tcId === "Neg_Fun_0002"
+      (tc) => tc.tcId === "Pos_Fun_0002"
     )!;
 
     const actualOutput = await conversionPage.convertText(testCase.input);

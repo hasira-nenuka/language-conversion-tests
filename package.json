@@ -12,7 +12,8 @@
     "report": "playwright show-report",
     "install:browsers": "playwright install chromium",
     "generate:excel": "ts-node scripts/generateExcel.ts",
-    "update:results": "ts-node scripts/updateExcelResults.ts"
+    "update:results": "ts-node scripts/updateExcelResults.ts",
+    "start:mock": "ts-node scripts/mock-server.ts"
   },
   "keywords": [
     "playwright",

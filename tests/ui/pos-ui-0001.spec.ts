@@ -15,15 +15,7 @@ test.describe("Positive UI Tests", () => {
     await conversionPage.goto();
   });
 
-  test("Pos_UI_0001: Convert imperative command sentence", async () => {
-    const testCase = positiveTestCases.find((tc) => tc.tcId === "Pos_UI_0001")!;
-
-    const actualOutput = await conversionPage.convertText(testCase.input);
-
-    expect(actualOutput).toBe(testCase.expectedOutput);
-  });
-
-  test("Pos_UI_0001 (Real-time): Verify real-time conversion updates", async ({
+  test("Pos_UI_0001: Convert imperative command sentence (Real-time UI Check)", async ({
     page,
   }) => {
     const testCase = positiveTestCases.find((tc) => tc.tcId === "Pos_UI_0001")!;
